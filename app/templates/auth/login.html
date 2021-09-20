@@ -1,0 +1,56 @@
+{% import 'bootstrap/wtf.html' as wtf%}
+{% extends 'bootstrap/base.html'%}
+
+{% block navbar %}
+
+    {% include 'navbar.html' %}
+    
+{% endblock %}
+
+{% block content%}
+<style>
+  .pp{
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .col-md-8{
+    background-color: wheat;
+    height: 330px;
+  }
+</style>
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-2"> </div>
+
+    <div class="col-md-8">
+      <!-- Flash message -->
+      {% for message in get_flashed_messages() %}
+          <div class="alert alert-danger">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          {{ message }}
+          </div>
+
+      {% endfor %}
+      <!-- Login form  -->
+
+      <div class="pp">
+        <p>Sign In Here</p>
+      </div>
+      <div class="formsign">
+        {{ wtf.quick_form(login_form) }}
+      </div>
+
+      
+
+      <p> Don't  have an account?  <a href="{{url_for('auth.register')}}">Sign up</a></p>
+
+    </div>
+
+    <div class="col-md-2"> </div>
+
+  </div>
+</div>
+
+
+{%endblock%}

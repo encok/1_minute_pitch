@@ -1,0 +1,33 @@
+{% extends 'bootstrap/base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+<style>
+ .col-md-8{
+   background-color: wheat;
+   margin-left: 200px;
+   margin-top: 10px;
+   height: 400px;
+ } 
+ .pp{
+  font-size: 28px;
+  font-weight: 600;
+ }
+</style>
+<div class="col-md-4"> </div>
+<div class="pp">
+  <p>Sign Up Here</p>
+</div>
+<div class="col-md-8">
+
+  {{wtf.quick_form(registration_form)}}
+
+ </div>
+
+{% endblock%}
+
+{% block navbar %}
+
+    {% include 'navbar.html' %}
+    
+{% endblock %}
