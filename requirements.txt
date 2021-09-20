@@ -1,6 +1,6 @@
 
 pycups==1.9.73
-PyGObject==3.36.0
+# PyGObject==3.36.0
 
 alembic==1.7.3
 appdirs==1.4.3
