@@ -14,6 +14,8 @@
 ## Description
   This is an application that allows a user to create a pitch depending on a certain category
   and add pitch content. A user can also be able to comment and vote on other user's pitches.
+## BDD
+
 
 ## Screenshots
 <img src="images/1.png">
