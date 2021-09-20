@@ -7,7 +7,7 @@
 
 
 ## Link to Live Site 
-
+ https://github.com/encok/1_minute_pitch
 
 
 
@@ -86,3 +86,4 @@ email: enckkipronoh@gmail.com<br/>
 Phone: 0717854859
 ## License
 This is the link to the MIT license used<br/><br/>
+https://github.com/encok/1_minute_pitch/blob/master/LICENSE
